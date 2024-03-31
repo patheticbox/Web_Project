@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking Quiz</title>
+    <link rel="stylesheet" href="test/test.css">
+    <style>
+        /* Стилі для контейнера питань */
+        #questions-container {
+            margin-bottom: 20px; /* Зазначаємо відступ внизу */
+        }
+
+        /* Стилі для окремого питання */
+        .question {
+             /* Зазначаємо відступ внизу між питаннями */
+        }
+
+        /* Стилі для питання */
+        .question h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            /* Зазначаємо відступ внизу між заголовком питання та відповідями */
+        }
+
+        /* Стилі для варіантів відповідей */
+        .answer {
+            /* Зазначаємо відступ внизу між варіантами відповідей */
+        }
+
+        /* Стилі для варіантів відповідей (радіо-кнопки та текст) */
+        .answer input[type="radio"] {
+            font-size: 16px; /* Зазначаємо відступ праворуч від радіо-кнопок */
+        }
+
+        /* Стилі для виведення результатів */
+        #result {
+            /* Зазначаємо відступ зверху перед виведенням результату */
+            font-size: 16px;
+            font-weight: bold; /* Напівжирний шрифт для результатів */
+        }
+
+        /* Стилі для правильних та неправильних відповідей */
+        .answer label.green {
+            color: green; /* Колір для правильних відповідей */
+        }
+
+        .answer label.red {
+            color: red; /* Колір для неправильних відповідей */
+        }
+
+        #submit-btn {
+            box-sizing: border-box;
+            width: 160px;
+            height: 50px;
+            background: #ED4C5C;
+            border: 1.5px solid #ED4C5C;
+            border-radius: 6px;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition-duration: .7s;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu_responsive">
+        <select class="responsive-nav">
+            <option value="0">Home</option>
+            <option value="1">Test</option>
+            <option value="2">Game</option>
+        </select>
+    </nav>
+    <nav class="nav-menu">
+        <div class="nav-block"><a href="index.html">Home</a></div>
+        <div class="nav-block"><a href="survey.html">Test</a></div>
+        <div class="nav-block"><a href="test.html">Test</a></div>
+        <div class="nav-block"><a href="game.html">Game</a></div>
+    </nav>
+    <header>
+        <div class="slogan">
+            <h1>Baking Quiz</h1>
+        </div>
+    </header>
+    <main class="main-test">
+        <div class="content-test">
+            <div id="questions-container"></div>
+            <button id="submit-btn">Завершити тест</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="test/test.js"></script>
+</body>
+</html>
