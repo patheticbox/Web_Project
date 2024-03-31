@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Забороняє прокручування сторінки */
+}
+
+body {
+    background-color: #1a1a1a; /* Темний фон */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif; /* Шрифт */
+}
+
+canvas {
+    border: 20px solid #000000; /* Чорна рамка */
+    background-color: #000000; /* Чорний фон для canvas */
+    box-shadow: inset 0 0 20px #333333; /* Тінь для ефекту 3D */
+}
