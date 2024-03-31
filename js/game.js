@@ -164,16 +164,15 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// Handle key press for game over screen
-function handleKeyDown(e) {
+document.addEventListener('keydown', function(e) {
     if (gameOver) {
         if (e.key === 'Escape') {
-            window.location.href = 'index.html'; // Redirect to main page
+            window.location.href = 'index.html'; // Перенаправлення на головну сторінку
         } else {
             restartGame();
         }
     }
-}
+});
 
 // Restart the game
 function restartGame() {
