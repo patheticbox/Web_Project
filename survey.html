@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/info.css">
+</head>
+<body>
+    <nav class="nav-menu_responsive">
+        <select class="responsive-nav">
+            <option value="0">Home</option>
+            <option value="1">Info</option>
+            <option value="2">Profile</option>
+            <option value="3">Logo</option>
+            <option value="4">Test</option>
+            <option value="5">Game</option>
+        </select>
+    </nav>
+    <nav class="nav-menu">
+        <div class="nav-block"><a href="index.html">Home</a></div>
+        <div class="nav-block"><a href="#">Info</a></div>
+        <div class="nav-block"><a href="#">Account</a></div>
+        <div class="nav-block"><a href="logo.html">Logo</a></div>
+        <div class="nav-block"><a href="/test/test.html">Test</a></div>
+        <div class="nav-block"><a href="/game/index.html">Game</a></div>
+    </nav>
+    <header>
+        <div class="slogan-ask">
+            <h1>Survey</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form id="surveyForm">
+                <label for="age">Ваш вік:</label><br>
+                <input type="number" id="age" name="age"><br><br>
+
+                <label for="gender">Ваша стать:</label><br>
+                <select id="gender" name="gender">
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                    <option value="other">Інше</option>
+                </select><br><br>
+
+                <label>Як часто ви відвідуєте нашу пекарню?</label><br>
+                <input type="radio" id="frequency_daily" name="frequency" value="daily">
+                <label for="frequency_daily">Щоденно</label><br>
+                <input type="radio" id="frequency_weekly" name="frequency" value="weekly">
+                <label for="frequency_weekly">Щотижнево</label><br>
+                <input type="radio" id="frequency_monthly" name="frequency" value="monthly">
+                <label for="frequency_monthly">Щомісяця</label><br>
+                <input type="radio" id="frequency_rarely" name="frequency" value="rarely">
+                <label for="frequency_rarely">Рідко</label><br><br>
+
+                <label for="favoriteItem">Який ваш улюблений продукт у нашій пекарні?</label><br>
+                <input type="text" id="favoriteItem" name="favoriteItem"><br><br>
+
+                <label>Як ви оцінюєте якість наших продуктів?</label><br>
+                <input type="range" id="productQuality" name="productQuality" min="1" max="10">
+                <output for="productQuality" id="productQualityValue">5</output><br><br>
+
+                <label for="feedback">Чи є у вас які-небудь пропозиції або зауваження?</label><br>
+                <textarea id="feedback" name="feedback" rows="4"></textarea><br><br>
+
+                <label>Як ви оцінюєте якість обслуговування у нашій пекарні?</label><br>
+                <input type="radio" id="serviceQuality_poor" name="serviceQuality" value="poor">
+                <label for="serviceQuality_poor">Погано</label><br>
+                <input type="radio" id="serviceQuality_average" name="serviceQuality" value="average">
+                <label for="serviceQuality_average">Середньо</label><br>
+                <input type="radio" id="serviceQuality_good" name="serviceQuality" value="good">
+                <label for="serviceQuality_good">Добре</label><br>
+                <input type="radio" id="serviceQuality_excellent" name="serviceQuality" value="excellent">
+                <label for="serviceQuality_excellent">Відмінно</label><br><br>
+
+                <label for="email">Ваша електронна пошта:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label>Чи рекомендували б ви нашу пекарню своїм друзям?</label><br>
+                <input type="radio" id="recommend_yes" name="recommend" value="yes">
+                <label for="recommend_yes">Так</label><br>
+                <input type="radio" id="recommend_no" name="recommend" value="no">
+                <label for="recommend_no">Ні</label><br><br>
+
+                <label>Як ви оцінюєте ціни у нашій пекарні?</label><br>
+                <input type="text" id="prices" name="prices"><br><br>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+        <section>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Пошук...">
+                <div id="searchResults"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
